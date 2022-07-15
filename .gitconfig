@@ -1,0 +1,5 @@
+[user]
+	name = Jair Perrut
+	email = jair.perrut@faci.ly
+[credential]
+	helper = "!f() { /var/www/.vscode-server/bin/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a/node /tmp/vscode-remote-containers-ce3e82dc6a99aef9be4a475bf49b1737b2ef463a.js $*; }; f"

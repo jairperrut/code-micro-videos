@@ -2,7 +2,7 @@ steps:
 
 - id: "Rodando docker-compose"
   name: 'docker/compose'
-  args: ['-f', 'docker-compose.cloudbuild.yaml', 'up', '-d', '--build']
+  args: ['-f', 'docker-compose.cloudbuild.yaml', 'up', '-d']
 
 - id: "Chown in /var/www"
   name: 'docker'
@@ -26,7 +26,7 @@ steps:
 
 - id: "Rodando migrations"
   name: 'docker'
-  args: ['exec', '-t', 'micro-videos-app', 'php', '/var/www/artisan', 'migrate', '-v']
+  args: ['exec', '-t', 'micro-videos-app', 'php', '/var/www/artisan', 'migrate']
 
 - id: "Rodando phpunit"
   name: 'docker'

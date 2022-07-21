@@ -29,9 +29,9 @@ services:
             - app
 
     db:
-        # build: ./.docker/mysql
-        # container_name: micro-videos-db
-        image: mysql:5.7
+        build: ./.docker/mysql
+        container_name: micro-videos-db
+        # image: mysql:5.7
         restart: always
         tty: true
         ports:
